@@ -5,10 +5,112 @@
 
 
 /* box sizing */
+main {
+  background-color: #e0ebeb;
+  max-width: 100%;
+}
 
+.page-nav {
+    box-sizing: border-box;
+    max-width: 95%;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 1.5rem;
+}
 
+.container {
+    box-sizing: border-box;
+    max-width: 95%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 20px;
+    background-color: #f0f5f5;
+}
 /* element styling (e.g. standard p, h1, h2, a, etc) */
 
+.page-nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #3a3a3a;
+}
+
+.page-nav li {
+    float: left;
+}
+
+.page-nav li:last-child {
+    float: right;
+}
+
+.page-nav li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 20px 16px;
+    text-decoration: none;
+}
+
+.page-nav li:hover {
+  background-color: #3ec9cb;
+}
+
+.page-header {
+    text-align: center;
+}
+
+.content {
+    overflow: hidden;
+}
+
+.content img {
+    display: inline-block;
+    max-width: 31%;
+    float: left;
+    padding: 1%;
+}
+
+@media screen and (max-width: 579px) {
+    .page-nav ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      background-color: #333;
+      display: block;
+    }
+
+    .page-nav li a {
+      float: left;
+      color: white;
+      padding: 8px 16px;
+      text-decoration: none;
+    }
+
+    .page-nav li {
+      width: 100%;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .content {
+      display: block;
+    }
+
+    .content img {
+      max-width: 80%;
+      padding-left: 10%;
+      padding-right: 10%;
+      margin: auto;
+    }
+
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
 
 /* flexible content images code */
 
@@ -26,6 +128,8 @@
 
 
 /* background colours for sections */
+
+
 
 
 /* image gallery media queries and size overrides */
